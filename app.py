@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 
 @app.route('/', methods=['GET'])
-def get_homePage():
+def get_home_page():
     if request.method == 'GET':
         return jsonify({"status": "ok"}), 200
     else:
